@@ -1,0 +1,159 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollPane1::l:p:545:p, seq l {space :6:6:p, par l {seq {par l {comp label2::l:p::p, comp label1::l:p:57:p, comp label3::l:p::p}, space s:::p, par l {comp product:::p:120:p, comp amout::l:p:120:p, comp price::l:p:120:p}}, comp addCar:::p:115:p}}}, par l:::p {seq {space :::p, comp scrollPane2:::p:529:p}, seq l {space :p:176:p, comp button2:::p:124:p}, seq l {space :::p, par l {comp payJu:::p:103:p, par l {comp deleteBU:::p:93:p, seq l {par t {seq t {space :p:190:p, comp exutBUtton:::p:107:p, space :::x}, seq t {comp label4:::p::p, space :::p, comp carAmoutUpadte:::p:105:p, space s:::p, comp label5:::p::p, space u:::p, comp textField1:::p:62:p, space :::p}}, comp changeBu:::p:75:p, space :p:15:p}}}}}, space ::119:x}}"
+			"$verticalGroup": "par l {seq l {par l {seq l {par l:::p {comp scrollPane2::::497:x, comp scrollPane1::::497:x}, space u:::p, par t {comp label1:::p::p, par b {comp product::b:p:21:p, comp label4::b:p::p, comp changeBu::b:p::p, comp carAmoutUpadte::b:p::p, comp label5::b:p::p, comp textField1::b:p::p}}}, seq l {space u:::p, comp button2:::p:32:p}}, space u:::p, par l {seq {par l {comp label2:::p::p, par b:l {comp price::b:p::p, comp deleteBU::b:p::p}}, par l {seq {space :p:18:p, par b {comp label3::b:p::p, comp amout::b:p::p}, space u:::p, comp addCar:::p:32:p}, seq l {space :p:37:p, comp payJu:::p:31:p}}}, comp exutBUtton::l:p:44:p}, space :0:34:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"border": new javax.swing.border.TitledBorder( "挑选商品" )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "productTabel"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "商品" )
+						add( "生产厂商" )
+						add( "生产日期" )
+						add( "产品类型" )
+						add( "售价" )
+						add( "库存" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "productTabelMousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "商品："
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "product"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "价格："
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "price"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "数量："
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amout"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addCar"
+				"text": "添加购物车"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				"border": new javax.swing.border.TitledBorder( "购物车" )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "carTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "商品名称" )
+						add( "价格" )
+						add( "数量" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "carTableMousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "删除选择商品"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "购物车商品数量修改："
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "carAmoutUpadte"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "changeBu"
+				"text": "修改"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "changeBu", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteBU"
+				"text": "删除"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteBU", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exutBUtton"
+				"text": "退出"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exut", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "原本数量："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "payJu"
+				"text": " 付款"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "payJu", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1205, 685 )
+		} )
+	}
+}

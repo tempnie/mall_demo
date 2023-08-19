@@ -1,0 +1,144 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormComponent( "javax.swing.JLabel" ) {
+			name: "label1"
+			"text": "text"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 851 )
+			"size": new java.awt.Dimension( 39, 15 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:973:p, par l {seq {space :::p, comp panel1:::p::p}, seq l {space :p:18:p, comp reBU:::p::p}}}}"
+			"$verticalGroup": "par l {seq {par l {comp scrollPane1::::825:x, seq {comp panel1:::p::p, space s:::p, comp reBU:::p::p, space :0:469:x}}, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "productTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "编号" )
+						add( "商品名称" )
+						add( "生产厂商" )
+						add( "生产日期" )
+						add( "产品类型" )
+						add( "进货价格" )
+						add( "零售价格" )
+						add( "库存" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( null )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 125, 40, 35, true ) )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "productTableMousePressed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, par l:::p {seq l {comp label3:::p::p, space :::p, comp idText:::p:42:p}, seq l {comp label4:::p::p, space :::p, comp productName:::p:160:p}, seq l {par l {comp label5::l:p::p, comp label9::l:p::p}, space :::p, par l {comp manufacturerName:::p:160:p, comp date::l:p:160:p}}, seq l {comp label10:::p::p, space :::p, comp model:::::x}, seq l {par l {comp label11::l:p::p, comp label12::l:p::p}, space :::p, par l {comp purPrice:::::x, comp soldPrice:::::x}}, seq l {comp label13:::p::p, space :::p, par l {seq {space :6:6:p, comp updateBu:::p::p, space ::59:x, comp deleteInfo:::p:68:p, space :p:11:p}, comp quantiText:::::x}}}, space ::76:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label3::b:p::p, comp idText::b:p::p}, space u:::p, par b {comp label4::b:p::p, comp productName::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp manufacturerName::b:p::p}, space u:::p, par b {comp label9::b:p::p, comp date::b:p::p}, space :::p, par b {comp label10::b:p::p, comp model::b:p::p}, space u:::p, par b {comp label11::b:p::p, comp purPrice::b:p::p}, space :::p, par b {comp label12::b:p::p, comp soldPrice::b:p::p}, space :::p, par b {comp label13::b:p::p, comp quantiText::b:p::p}, space u:::p, par t {comp deleteInfo:::p::p, comp updateBu:::p::p}, space ::16:x}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "表单" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "编号："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idText"
+					"editable": false
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "商品名称："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "productName"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "生产厂商："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "manufacturerName"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "生产日期："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "date"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "类型："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "model"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "进货价格："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "purPrice"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "零售价格："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "soldPrice"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "库存："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "quantiText"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "deleteInfo"
+					"text": "删除"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "updateBu"
+					"text": "修改"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reBU"
+				"text": "返回"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1195, 835 )
+		} )
+	}
+}

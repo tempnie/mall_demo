@@ -1,0 +1,55 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:367:p, comp label3:::p:74:p, space :::p, comp pwd2:::p:194:p}, seq l {space :p:384:p, comp resetJB:::p:78:p, space :p:65:p, comp reJB:::p:78:p}, seq l {space :p:406:p, comp label1:::p:214:p}, seq l {space :p:365:p, par t {comp label4:::p:74:p, comp label2:::p:74:p}, space :::p, par l {comp pwd1:::p:194:p, comp name:::p:194:p}}}, space ::504:x}}"
+			"$verticalGroup": "par l {seq l {space :p:175:p, comp label1:::p:45:p, space :::p, par b {comp label4::b:p:32:p, comp name::b:p::p}, space :p:8:p, par b {comp label2::b:p:32:p, comp pwd1::b:::x}, space s:::p, par b {comp label3::b:p:32:p, comp pwd2::b:p::p}, space s:::p, par b {comp resetJB::b:p:34:p, comp reJB::b:p:34:p}, space ::255:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "  管理员密码重置"
+				"font": new java.awt.Font( "微软雅黑", 1, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "新密码："
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "新密码："
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "pwd1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "pwd2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "resetJB"
+				"text": "确定"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reJB"
+				"text": "返回"
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "用户名："
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "name"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1145, 655 )
+		} )
+	}
+}

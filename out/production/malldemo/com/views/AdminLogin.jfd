@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "filly,hidemode 3,alignx right"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][][][][]"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "title"
+				"text": "    管理员登陆"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 12, false )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 3 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "userName"
+				"text": "账号"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 12 4"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "adminText"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 13 4 9 1,wmin 200,hmin 20"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "userNameText"
+				"text": "密码"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 12 5"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordText"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -2, false )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 13 5 9 1,hmin 20"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "adminLogin"
+				"text": "登陆"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 6"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exit"
+				"text": "退出"
+				"font": #SwingDerivedFont1
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 19 6"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 30 )
+			"size": new java.awt.Dimension( 1115, 640 )
+		} )
+	}
+}

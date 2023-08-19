@@ -1,0 +1,102 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane2:::p:973:p, space :::p, par l {seq {par l {comp label7::l:p::p, seq l {comp label6:::p::p, space :p:2:p, comp usernameText:::p::p}, seq l {space :p:6:p, comp label8:::p::p}}, space :::p, par l:::p {comp userName::::188:x, comp emailText::l:::x, comp textField3::l::188:x}}, seq l {comp searachBUtton:::p:73:p, space s:::p, comp deleBu:::p::p}, comp reButton:::p:73:p}, space ::93:x}}"
+			"$verticalGroup": "par l {seq l {comp scrollPane2::::829:x, space :::p}, seq l {space :::p, par t {comp label6:::p:37:p, par l:t {comp userName:::p::p, comp usernameText:::p::p}}, space :::p, par b {comp label7::b:p::p, comp textField3::b:p::p}, space :::p, par t {comp label8:::p::p, comp emailText:::p::p}, space s:::p, par b {comp searachBUtton::b:p::p, comp deleBu::b:p::p}, space u:::p, comp reButton:::p::p, space ::662:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "customerTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "编号" )
+						add( "用户名" )
+						add( "用户级别" )
+						add( "电话号码" )
+						add( "邮箱" )
+						add( "已消费金额" )
+						add( "注册日期" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( null )
+						add( false )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 125, 40, 35, true ) )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "电话号码"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "   邮箱"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "emailText"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searachBUtton"
+				"text": "查询"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "usernameText"
+				"text": "用户名"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userName"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reButton"
+				"text": "返回"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleBu"
+				"text": "删除"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 750 )
+			"size": new java.awt.Dimension( 1320, 835 )
+		} )
+	}
+}
